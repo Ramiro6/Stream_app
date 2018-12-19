@@ -4,6 +4,7 @@ import StreamDelete from './components/StreamDelete';
 import StreamEdit from './components/StreamEdit';
 import StreamShow from './components/StreamShow';
 import StremList from './components/StremList';
+import Header from './Header.jsx';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
       <div>
         <BrowserRouter>
           <div>
+            <Header />
             <Route path='/' exact component={StremList} />
             <Route path='/stream/new' exact component={StreamCreate} />
             <Route path='/stream/delete' exact component={StreamDelete} />
